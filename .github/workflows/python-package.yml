@@ -33,7 +33,7 @@ jobs:
     - uses: conda-incubator/setup-miniconda@v2
       with:
         environment-file: environment.yml
-      #   activate-environment: starwinds
+        activate-environment: starwinds
     - name: Get some conda info
       run: |
         conda info
