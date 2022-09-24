@@ -20,8 +20,7 @@ jobs:
         python-version: ["3.10"]
 
     steps:
-    - name: Check out
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
@@ -33,6 +32,7 @@ jobs:
       run: |
         conda info
         conda list
+
     - name: Print conda info with the bash -l {0} command
       shell: bash -l {0}
       run: |
