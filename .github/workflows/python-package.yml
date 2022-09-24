@@ -35,6 +35,9 @@ jobs:
         environment-file: environment.yml
         activate-environment: starwinds
         auto-activate-base: false
+      run: |
+        conda info
+        conda list
     - name: Get some conda info
       run: |
         conda info
