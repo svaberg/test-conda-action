@@ -40,7 +40,7 @@ jobs:
     - name: Test library available with the bash -l {0} command
       shell: bash -l {0}
       run: |
-        true || python test_numpy_available.py
+        python test_numpy_available.py
     - name: Test library available without the bash -l {0} command
       run: |
-        true || python test_numpy_available.py
+        python test_numpy_available.py

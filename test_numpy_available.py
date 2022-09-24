@@ -1,3 +1,7 @@
 print("Importing numpy...")
-import numpy as np
-print(f"Numpy verision: {np.__version__}")
+try:
+    import numpy as np
+    print(f"numpy version: {np.__version__}")
+except ModuleNotFoundError as e:
+    print(f"numpy modudule not found: {str(e)}")
+print("Done.")
