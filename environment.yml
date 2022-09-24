@@ -1,3 +1,4 @@
+name: starwinds
 channels:
   - conda-forge
   - defaults

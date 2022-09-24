@@ -31,7 +31,8 @@ jobs:
       run: |
         echo ${MY_TEST_SECRET}
     - uses: conda-incubator/setup-miniconda@v2
-      # with:
+      with:
+        environment-file: environment.yml
       #   activate-environment: starwinds
     - name: Get some conda info
       run: |
